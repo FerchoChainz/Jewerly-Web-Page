@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Josefin+Sans:ital,wght@1,100&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background:whitesmoke;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Heder section*/
+
+
+/*header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0 ;
+}*/
+
+/*CODIGO DEL CURSO*/
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a img{
+    border-radius: 50%; /*Para redondear la imagen*/
+    margin-top: 10px;
+}
+
+header nav ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+nav .nav-right-section a{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #000;
+    
+}
+
+nav .nav-right-section a:hover{
+    color: red;
+}
+
+#link_menu:hover{
+    color: red;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%; /*Para redondear la imagen*/
+    margin-left: 10px;
+}
+
+
+/*CODIGO DEL CURSO*/
+
+/*Main*/
+
+
+.container-items{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 33%  33% 33%;
+    
+}
+
+.container-items:hover{
+    border-radius: 10px;
+}
+
+.item{
+    border-radius: 10px;
+    background-color: #FAF8F7;
+}
+
+.item:hover{
+    box-shadow:0 10px 20px rgb(218, 218, 218) ; 
+}
+
+.info-producto{
+padding: 15px 30px;
+
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-producto{
+    padding: 10px 30px;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.description {
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+/*FOOTER*/
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: black;
+    padding: .8rem 1rem;
+    
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    color: #ffc845;
+}
+
+
+#link_menu{
+    color: rgb(0, 0, 0);
+}
+
+#linknav{
+    font-size: 2rem;
+}
+
+
+@media screen and (min-width: 900px) {
+
+    section {
+        padding: 7.9rem;
+    }
+
+
+    .active {
+        position: relative;
+    }
+    .active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .fil {
+        font-size: 3rem;
+    }
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .res-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .res-info > div {
+        flex: 1;
+    }
+
+    .pad-rig {
+        padding-right: 7rem;
+    }
+
+    .footer{
+        
+        text-align: center;
+        background: rgba(0, 0, 0, 0);
+        background-image: url('images/Snow_Ice_Textures/SnowIceTexture0007.jpg'); 
+        color: rgb(5, 0, 0);
+        padding: 5em;
+    }
+    
+    #image-footer{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footerC{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .footerC > div{
+        width: 33%;
+    }
+    
+    .footer_corporativo{
+        font-size: 20px;
+        font-family: serif;
+    }
+    
+    .footer_contacto{
+        font-size: 20px;
+        font-family: serif;
+    }
+    
+    .smp{
+        font-size: 20px;
+    }
+
+}

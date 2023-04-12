@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-image: url('../images/wallpaper2.jpg');
+    background-size: contain ;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 400px;
+    background: whitesmoke;
+    border-radius: 25px;
+}
+
+.formulario:hover{
+    border: 2px solid silver;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(228, 227, 227);
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 30px 0 ;
+}
+
+form .username:hover{
+    position: relative;
+    border-bottom: 2px solid darkblue;
+    margin: 30px 0 ;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color:#201E1C ;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.username label::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left:0 ;
+    width: 0;
+    height: 2px;
+    background: #1A9AF7;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label{
+    top: -5px;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: darkblue;
+    cursor: pointer;
+    text-align: center;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+input[type= "submit"]{
+    width: 100%;
+    height: 50px;
+    border: 3px solid;
+    border-radius: 25px;
+    background: #1B4F72;
+    font-size: 18px;
+    color: whitesmoke;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type= "submit"]:hover{
+    border-color: #D6EAF8;
+    transition: .5s;
+}
+
+.registrarse{
+    margin: 10px 0 ;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.registrarse a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
+
+.regresar{
+    margin: 30px 0 ;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
+
+.regresar a{
+    color: #201E1C;
+    text-decoration: none;
+}
+
+.regresar a:hover{
+    text-decoration: underline;
+}
+
+.letritas p{
+    margin: 30px 0 ;
+    text-align: center;
+    font-size: 8px;
+    color: black;
+}

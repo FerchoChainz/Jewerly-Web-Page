@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleloginn.css">
+    <title>LOGIN</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <!--La mejor practica es agregar las fuentes en el head y no en el css 
+    cuando las fuentes se importan-->
+</head>
+<body>
+   <div class="formulario" >
+    <h1>Inicio de sesión</h1>
+    <form action="loginAdmin.php" method="post">
+        <div class="username">
+        <input type="email" id="txtusuario" name="txtusuario" required placeholder="Email" >
+        </div>
+        
+        <div class="username">
+        <input type="password" id="txtpassword" name="txtpassword" required placeholder="*******">
+        </div>
+
+        <div class="recordar">¿Olvidaste tu contraseña?
+        </div>
+
+        <input type="submit" name="Ingresar" id="registrar"></input>
+
+
+        <div class="regresar">
+            <a href="index.html">Volver a la pagina de inicio.</a>
+        </div>
+
+        <div class="letritas">
+            <p>The Glacier Jewerly no se hace responsable por el nivel de flex que provoca en los haters</p>
+        </div>
+    </form>
+   </div>
+</body>
+</html>
