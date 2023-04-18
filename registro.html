@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleloginn.css">
+    <title>REGISTRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <!--La mejor practica es agregar las fuentes en el head y no en el css 
+    cuando las fuentes se importan-->
+</head>
+<body>
+    <div class="formulario">
+    <h1>REGISTRO</h1>
+    <form action="registro.php" method="post">
+        <div class="username">
+        <input type="text" id="nombre"  name="nombre" required placeholder="Nombre">
+        </div>
+        
+        <div class="username">
+        <input type="email" id="correo" name="correo" required placeholder="Email">
+        </div>
+        
+        <div class="username">
+        <input type="tel" id="telefono" name="telefono"  required placeholder="Telefono">
+        </div>
+
+        <div class="username">
+        <input type="text" id="sexo" name="sexo" required placeholder="Sexo">
+        </div>
+
+        <div class="username">
+        <input type="password" name="contrasenia" id="contrasenia" required placeholder="********">
+        </div>
+
+        <input type="submit" name="registrar" id="registrar"></input>
+
+        <div class="registrarse">
+            <a href="ingresar.html">¡Ya tengo una cuenta!</a>
+        </div>
+    </form>
+   </div>
+</body>
+</html>
